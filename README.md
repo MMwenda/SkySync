@@ -1,5 +1,5 @@
 
-SkySync
+
 SkySync is your personal weather companion, designed to keep you informed and prepared for any climatic conditions. With a sleek and intuitive interface, SkySync delivers real-time weather updates, forecasts, and alerts tailored to your location.
 
 Why Choose SkySync?
