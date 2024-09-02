@@ -584,16 +584,8 @@ video {
   display: grid;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .max-w-full {
