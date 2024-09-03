@@ -584,8 +584,24 @@ video {
   display: grid;
 }
 
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.max-h-full {
+  max-height: 100%;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-full {
@@ -664,6 +680,11 @@ video {
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -739,11 +760,6 @@ video {
   line-height: 1;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -752,6 +768,36 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -810,7 +856,6 @@ body {
 }
 
 .logo{
-  font-size: 48px;
   background: linear-gradient(to right,  #800080, #00d4ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -824,4 +869,124 @@ body {
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+@media (min-width: 480px) {
+  .sm\:w-96 {
+    width: 24rem;
+  }
+
+  .sm\:w-9 {
+    width: 2.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .md\:h-96 {
+    height: 24rem;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:w-3\/4 {
+    width: 75%;
+  }
+
+  .md\:gap-4 {
+    gap: 1rem;
+  }
+
+  .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 976px) {
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .lg\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .lg\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .lg\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:p-8 {
+    padding: 2rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .xl\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .xl\:w-1\/2 {
+    width: 50%;
+  }
+
+  .xl\:gap-8 {
+    gap: 2rem;
+  }
+
+  .xl\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 } 
