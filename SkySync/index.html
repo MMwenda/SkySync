@@ -22,7 +22,7 @@
   <div class="max-w-full mx-auto bg-white bg-opacity-50 rounded-lg shadow-lg p-4 flex-grow">
    <div class="flex items-center justify-between mb-4">
    
-      <h1 class="logo underline font-bold text-7xl">SkySync</h1>
+      <a rel="stylesheet" href="http://127.0.0.1:5500/index.html" class="logo underline font-bold text-7xl ">SkySync</a>
     
       <div class="flex items-center space-x-2 md:space-x-4 lg:space-x-6 xl:space-x-8">
         <input class="px-2 py-1 rounded-lg border border-gray-300 w-full md:w-3/4 lg:w-2/3 xl:w-1/2" placeholder="Search City..." type="text"/>
@@ -100,9 +100,9 @@
       <input class="flex-grow border-b border-gray-400 mx-2 bg-transparent focus:outline-none w-full md:w-3/4 lg:w-2/3 xl:w-1/2" type="text"/>
      </div>
     </div>
-    <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded md:text-lg lg:text-xl xl:text-2xl">
-     Next 48 hours
-    </button>
+    <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-400 active:bg-blue-300 active:scale-75 active:transition-none transition-transform duration-500">
+      Next 48 hours
+     </button>
 </div>
    <div class="bg-white bg-opacity-50 rounded-lg p-4 mb-4">
     <div class="text-lg font-semibold mb-2">
@@ -146,10 +146,52 @@
       </div>
      </div>
     </div>
-    <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">
+    <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-400 active:bg-blue-300 active:scale-75 active:transition-none transition-transform duration-500">
      Next 10 days
     </button>
    </div>
+
+   <div class="bg-white bg-opacity-50 rounded-lg p-4 mb-4 md:mb-6 lg:mb-8 xl:mb-10">
+    <div class="text-lg font-semibold mb-4 md:text-xl lg:text-2xl xl:text-3xl">
+      Today's Forecast
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-8 xl:gap-10">
+      <div class="flex justify-between items-center">
+        <div class="text-base md:text-lg lg:text-xl xl:text-2xl">
+          Morning
+        </div>
+        <input class="flex-grow border-b border-gray-400 mx-2 bg-transparent focus:outline-none w-full md:w-3/4 lg:w-2/3 xl:w-1/2" type="text"/>
+      </div>
+      <div class="flex justify-between items-center">
+        <div class="text-base md:text-lg lg:text-xl xl:text-2xl">
+          Overnight
+        </div>
+        <input class="flex-grow border-b border-gray-400 mx-2 bg-transparent focus:outline-none w-full md:w-3/4 lg:w-2/3 xl:w-1/2" type="text"/>
+      </div>
+      <div class="flex justify-between items-center">
+        <div class="text-base md:text-lg lg:text-xl xl:text-2xl">
+          Noon
+        </div>
+        <input class="flex-grow border-b border-gray-400 mx-2 bg-transparent focus:outline-none w-full md:w-3/4 lg:w-2/3 xl:w-1/2" type="text"/>
+      </div>
+      <div class="flex justify-between items-center">
+        <div class="text-base md:text-lg lg:text-xl xl:text-2xl">
+          Afternoon
+        </div>
+        <input class="flex-grow border-b border-gray-400 mx-2 bg-transparent focus:outline-none w-full md:w-3/4 lg:w-2/3 xl:w-1/2" type="text"/>
+      </div>
+      <div class="flex justify-between items-center">
+        <div class="text-base md:text-lg lg:text-xl xl:text-2xl">
+          Evening
+        </div>
+        <input class="flex-grow border-b border-gray-400 mx-2 bg-transparent focus:outline-none w-full md:w-3/4 lg:w-2/3 xl:w-1/2" type="text"/>
+      </div>
+    </div>
+    <button class="mt-6 px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-400 active:bg-blue-300 active:scale-75 active:transition-none transition-transform duration-500">
+      Next 48 hours
+    </button>
+  </div>
+
    <div class="bg-white bg-opacity-50 rounded-lg p-4 md:p-6 lg:p-8 xl:p-10 flex-grow">
     <div class="text-lg font-semibold mb-2 md:text-xl lg:text-2xl xl:text-3xl">
      RADAR
@@ -177,5 +219,7 @@
     </div>
    </div>
   </footer>
+
+  <script src="js/script.js"></script>
  </body>
 </html>
