@@ -19,3 +19,13 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 } 
+
+
+
+  .contact-container {
+    max-width: 400px; 
+    margin: 40px auto; 
+  }
+  .contact-popup {
+    backdrop-filter: blur(6px); 
+  }
